@@ -1,0 +1,111 @@
+//This is the new _style.scss file that actually matters; I'm using the old one as reference.
+
+//Body styling
+body{
+    //This way, the background image stays fixed regardless of scroll.
+    //background-image: url(../assets/image/ucf_bg.png);
+    background-color: rgb(48, 81, 190);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    //Setting margin to 0px removes those white bars that usually appear on either side.
+	margin: 0px;
+	font-family: Georgia;
+	font-size: 18pt;
+}
+
+//Styling within the Content
+#content{
+	background-color: $bgcol-light;
+
+	margin: 8%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    
+	padding: 5%;
+	padding-top: 50px;
+
+    //Image Styling
+    img{
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+
+    .grid{
+        border: 1px solid black;
+    }
+
+    .grid-item{
+        border: 1px solid black;
+        padding: 3%;
+    }
+
+    .full{
+        img{
+            width: 100%;
+        }
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+}
+
+//Header Styling
+header{
+    background-color: $headercol;
+    color: white;
+
+    text-align: center;
+    padding-top: 30px;
+
+    h1{
+        margin: auto;
+    }
+
+    //Due to me using h1 as the navigation as well, I decided to make the title header its own category.
+    //Not very efficient, I know, but I am also cutting it closer than I would normally like.
+    #title-header{
+        font-size: 56pt;
+    }
+
+    //Navigation Grid
+    .grid{
+        border: 2px solid $nav-bordercol;
+    }
+
+    .grid-item{
+        padding: 10px;
+        border: 2px solid $nav-bordercol;
+    }
+
+    //Remove underline from nav links
+    a{
+        text-decoration: none;
+    }
+
+    //Navigation Link Colors
+    a:link{
+        color:$linkcol;
+    }
+    a:visited{
+        color:$linkcol-visit
+    }
+    a:hover{
+        color:$linkcol-hover;
+    }
+    a:active{
+        color:$linkcol-visit
+    }
+
+}
+
+//Footer Styling
+footer{
+    background-color: $headercol;
+    color: white;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
